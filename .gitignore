@@ -1,0 +1,8 @@
+.env
+*/.env
+.vscode/
+extracted/
+*/build/
+.venv/
+*/__pycache__/
+*/app.spec

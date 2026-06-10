@@ -6,3 +6,4 @@ extracted/
 .venv/
 */__pycache__/
 */app.spec
+edited/

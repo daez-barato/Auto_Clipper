@@ -73,3 +73,8 @@ class ClipFetcher:
 
         with YoutubeDL({"outtmpl": os.path.join(self.download_path, f"{clip['title'].replace(' ', '_')}.mp4")}) as ydl:
             ydl.download([clip["url"]])
+    
+    def clip_download_http(self, clip):
+        with YoutubeDL({"quiet": True}) as ydl:
+            info = ydl.extract_info(clip["url"], download=False)
+            return info["url"]

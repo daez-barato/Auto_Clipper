@@ -7,3 +7,6 @@ extracted/
 */__pycache__/
 */app.spec
 edited/
+build/
+clip_editor_app.spec
+clip_editor_app.exe

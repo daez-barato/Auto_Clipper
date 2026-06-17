@@ -2,18 +2,11 @@ import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 import threading
 import os
-from clip_fetcher import ClipFetcher
+from .classes.clip_fetcher import ClipFetcher
+from .globals import STREAMERS
 
-
-STREAMERS = [
-    "marlon", "ishowspeed", "yonnajay", "jynxzi", "tylil", "hasanabi",
-    "ddg", "xqc", "pokimane", "agent00", "adapt", "yourragegaming",
-    "caseoh247", "jasontheween", "n3on", "2xrakai", "rayasianboy",
-    "extraemily", "fanum", "plaqueboymax", "cinna", "stableronaldo", "kaicenat"
-]
 
 DEFAULT_DOWNLOAD_PATH = os.path.join(os.path.dirname(__file__), "..", "extracted")
-
 
 class App(tk.Tk):
     def __init__(self):

@@ -1,7 +1,7 @@
 import requests
 
-from clip_fetcher import ClipFetcher
-from clip_editor import ClipEditor
+from app.classes.clip_fetcher import ClipFetcher
+from app.classes.clip_editor import ClipEditor
 import os
 import sys
 

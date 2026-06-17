@@ -1,4 +1,4 @@
-from clip_fetcher import ClipFetcher
+from app.classes.clip_fetcher import ClipFetcher
 
 if __name__ == "__main__":
     clip_fetcher = ClipFetcher()

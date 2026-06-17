@@ -6,16 +6,9 @@ import os
 import sys
 import re
 
-from clip_fetcher import ClipFetcher
-from clip_editor import ClipEditor
-
-
-STREAMERS = [
-    "marlon", "ishowspeed", "yonnajay", "jynxzi", "tylil", "hasanabi",
-    "ddg", "xqc", "pokimane", "agent00", "adapt", "yourragegaming",
-    "caseoh247", "jasontheween", "n3on", "2xrakai", "rayasianboy",
-    "extraemily", "fanum", "plaqueboymax", "cinna", "stableronaldo", "kaicenat"
-]
+from .classes.clip_fetcher import ClipFetcher
+from .classes.clip_editor import ClipEditor
+from .globals import STREAMERS
 
 base_dir = os.path.dirname(sys.executable if getattr(sys, "frozen", False) else __file__)
 DEFAULT_EDIT_PATH = os.path.join(base_dir, "..", "edited")

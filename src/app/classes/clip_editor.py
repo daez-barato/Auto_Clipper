@@ -2,10 +2,9 @@ import os
 import sys
 import time
 import requests
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-base_dir = os.path.dirname(sys.executable if getattr(sys, 'frozen', False) else __file__)
-load_dotenv(os.path.join(base_dir, ".env"))
+load_dotenv(find_dotenv())
 
 class ClipEditor:
 

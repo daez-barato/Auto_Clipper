@@ -5,8 +5,7 @@ from dotenv import load_dotenv, find_dotenv;
 from yt_dlp import YoutubeDL;
 
 
-base_dir = os.path.dirname(sys.executable if getattr(sys, 'frozen', False) else __file__)
-load_dotenv(os.path.join(base_dir, ".env"))
+load_dotenv(find_dotenv())
 
 _streamers = {}
 
